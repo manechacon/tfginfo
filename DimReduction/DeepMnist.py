@@ -20,8 +20,8 @@ M = data.shape[1]
 data = np.array(data).reshape(N, M*M)
 
 ## Calculamos SVD de nuestra BBDD.
-#U, s, VT = svd(data)
-# print(s, s.shape)
+U, s, VT = svd(data)
+print(s, s.shape)
 NFEAT = 40
 
 ## Aplicamos PCA
